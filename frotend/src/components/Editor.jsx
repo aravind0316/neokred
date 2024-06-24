@@ -32,7 +32,7 @@ const MarkdownEditor = () => {
         markdown: value,
       });
       if (!markDownResp?.error) {
-        setMarkdown(markDownResp?.data?.html);
+        setMarkdown(markDownResp?.data?.data);
       }
       console.log("🚀 ~ handleDebouncedChange ~ markDownResp:", markDownResp);
     } catch (error) {
